@@ -1,0 +1,39 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/turt5/nodejs-topic-extractor-NLP.git"
+  },
+  "keywords": [
+    "nodejs",
+    "NLP",
+    "Topic-Extractor",
+    "AI",
+    "Machine",
+    "Learning"
+  ],
+  "author": "Kaium Al Limon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/turt5/nodejs-topic-extractor-NLP/issues"
+  },
+  "homepage": "https://github.com/turt5/nodejs-topic-extractor-NLP#readme",
+  "dependencies": {
+    "@google/generative-ai": "^0.1.3",
+    "body-parser": "^1.20.2",
+    "compromise": "^14.11.0",
+    "dotenv": "^16.3.1",
+    "env": "^0.0.2",
+    "express": "^4.18.2",
+    "natural": "^6.10.4",
+    "node-fetch": "^2.6.0",
+    "node-nlp": "^4.27.0",
+    "transformers": "^3.1.0"
+  }
+}

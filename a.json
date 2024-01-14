@@ -1,0 +1,100 @@
+{
+  "topic": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [{ "text": "El Clasico: A Fierce Rivalry in Football" }],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0,
+        "safetyRatings": [
+          {
+            "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+            "probability": "NEGLIGIBLE"
+          },
+          {
+            "category": "HARM_CATEGORY_HATE_SPEECH",
+            "probability": "NEGLIGIBLE"
+          },
+          {
+            "category": "HARM_CATEGORY_HARASSMENT",
+            "probability": "NEGLIGIBLE"
+          },
+          {
+            "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+            "probability": "NEGLIGIBLE"
+          }
+        ]
+      }
+    ],
+    "promptFeedback": {
+      "safetyRatings": [
+        {
+          "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+          "probability": "NEGLIGIBLE"
+        },
+        {
+          "category": "HARM_CATEGORY_HATE_SPEECH",
+          "probability": "NEGLIGIBLE"
+        },
+        { "category": "HARM_CATEGORY_HARASSMENT", "probability": "NEGLIGIBLE" },
+        {
+          "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+          "probability": "NEGLIGIBLE"
+        }
+      ]
+    }
+  },
+  "body": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "* **El Clasico** is the name given to the football match between FC Barcelona and Real Madrid, two of the most successful and well-known clubs in the world.\n* The rivalry between the two clubs is one of the most intense in world football, and matches between them are often fiercely contested.\n* The name \"El Clasico\" is derived from the Spanish word for \"classic\", and is used to reflect the importance and significance of the match.\n* The first El Clasico match was played on 13 May 1902, with Barcelona winning 3-1.\n* The two teams have met 248 times in all competitions, with Real Madrid winning 101 matches, Barcelona winning 95 matches, and 52 matches ending in a draw.\n* In La Liga, the two teams have met 185 times, with Real Madrid winning 76 matches, Barcelona winning 72 matches, and 37 matches ending in a draw.\n* The two teams have also met in the Copa del Rey final 11 times, with Barcelona winning 7 matches and Real Madrid winning 4 matches.\n* The two teams have met in the UEFA Champions League/European Cup final 5 times, with Real Madrid winning 3 matches and Barcelona winning 2 matches.\n* The most recent El Clasico match was played on 16 October 2022, with Real Madrid winning 3-1.\n* The next El Clasico match is scheduled to be played on 19 March 2023."
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0,
+        "safetyRatings": [
+          {
+            "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+            "probability": "NEGLIGIBLE"
+          },
+          {
+            "category": "HARM_CATEGORY_HATE_SPEECH",
+            "probability": "NEGLIGIBLE"
+          },
+          {
+            "category": "HARM_CATEGORY_HARASSMENT",
+            "probability": "NEGLIGIBLE"
+          },
+          {
+            "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+            "probability": "NEGLIGIBLE"
+          }
+        ]
+      }
+    ],
+    "promptFeedback": {
+      "safetyRatings": [
+        {
+          "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+          "probability": "NEGLIGIBLE"
+        },
+        {
+          "category": "HARM_CATEGORY_HATE_SPEECH",
+          "probability": "NEGLIGIBLE"
+        },
+        { "category": "HARM_CATEGORY_HARASSMENT", "probability": "NEGLIGIBLE" },
+        {
+          "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+          "probability": "NEGLIGIBLE"
+        }
+      ]
+    }
+  }
+}
