@@ -25,13 +25,14 @@ app.post('/generate', async (req, res) => {
     // Get the generative model
     const model = await genAI.getGenerativeModel({ model: "gemini-pro" });
 
-    // Generate content based on local prompt
-    const result = await model.generateContent(localPrompt);
-    const responseTopicText = extractTextFromResponse(result);
+    // Fetch both topic and body content in parallel
+    const [resultTopic, resultBody] = await Promise.all([
+      model.generateContent(localPrompt),
+      model.generateContent(prompt)
+    ]);
 
-    // Generate content based on original prompt
-    const result2 = await model.generateContent(prompt);
-    const responseMainText = extractTextFromResponse(result2);
+    const responseTopicText = extractTextFromResponse(resultTopic);
+    const responseMainText = extractTextFromResponse(resultBody);
 
     res.status(200).json({ topic: responseTopicText, body: responseMainText });
   } catch (error) {
@@ -41,26 +42,25 @@ app.post('/generate', async (req, res) => {
 });
 
 function extractTextFromResponse(response) {
-    try {
-      console.log("Response:", response); // Log the entire response object
-  
-      const candidates = response?.response?.candidates;
-      if (candidates && candidates.length > 0) {
-        const content = candidates[0]?.content;
-        if (content && content.parts && content.parts.length > 0) {
-          const text = content.parts[0]?.text;
-          if (text) {
-            return text;
-          }
+  try {
+    console.log("Response:", response); // Log the entire response object
+
+    const candidates = response?.response?.candidates;
+    if (candidates && candidates.length > 0) {
+      const content = candidates[0]?.content;
+      if (content && content.parts && content.parts.length > 0) {
+        const text = content.parts[0]?.text;
+        if (text) {
+          return text;
         }
       }
-      throw new Error("Unable to extract text from response");
-    } catch (error) {
-      console.error("Error extracting text from response:", error);
-      return "Error extracting text";
     }
+    throw new Error("Unable to extract text from response");
+  } catch (error) {
+    console.error("Error extracting text from response:", error);
+    return "Error extracting text";
   }
-  
+}
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
