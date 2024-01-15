@@ -2,8 +2,6 @@ const { GoogleGenerativeAI } = require("@google/generative-ai");
 const dotenv = require('dotenv');
 const express = require('express');
 const bodyParser = require('body-parser');
-
-const express = require('express');
 const multer = require('multer');
 const bcrypt = require('bcrypt');
 const { Sequelize, DataTypes } = require('sequelize');
